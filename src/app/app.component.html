@@ -1,0 +1,71 @@
+<div class = container>
+<div class="csv-file-chooser-section">
+  <div>
+    <label for="csvFileUpload">Customer file: </label> 
+    <input type="file" #fileImportInput name="File Upload" id="csvFileUpload" (change)="fileChangeListener($event)"
+      accept=".csv" />
+  </div>
+  <div>
+    <label for="csvFileUpload1">Product file: </label> 
+    <input type="file" #fileImportInput1 name="File Upload" id="csvFileUpload1" (change)="fileChangeListener1($event)"
+    accept=".csv" />
+  </div>
+  
+  
+</div>
+
+<div class = formInput>
+  <h2>Please select the necessary details: </h2>
+
+  <form [formGroup] = "formdata" (ngSubmit) = "saveData()" >
+    <label for="person">Choose customer name: </label>
+    <select [(ngModel)] = "p_name" id="person" formControlName="person" class = "fortextbox" name="person">
+        <option>Select name</option>
+        <option *ngFor="let csvData of csvRecords;">{{csvData.customer_name}}</option>
+    </select>
+    <br>
+    <label for="product">Choose product: </label>
+    <select [(ngModel)] = "product_name" id="product" formControlName="product" class = "fortextbox" name="product">
+        <option>Select product</option>
+        <option *ngFor="let csvData of csvRecords1;">{{csvData.product_name}}</option>
+    </select>
+    <br>
+    <label for="quantity">Quantity: </label>
+    <input [(ngModel)] = "product_quantity" type="number" id = "quantity" formControlName="quantity" class = "fortextbox" name="quantity"/>
+    <br>
+    <label for="price">Price($): </label>
+    <input [(ngModel)] = "product_price" type="number" id = "price" formControlName="price" class = "fortextbox" name="price"/>
+    <br>
+    <button type = "submit" class = "forsubmit" value = "Submit">Submit</button>
+    
+    
+  </form>
+  <p><b>Total in dollar:</b> {{product_quantity*product_price}}</p>
+</div>
+
+
+<table id="excel-table">
+  <tr>
+    
+    <th>Name</th>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+  <!-- <tr>
+    <td>{{p_name}}</td>
+    <td>{{product_name}}</td>
+    <td>{{product_quantity}}</td>
+    <td>{{product_price}}</td>
+  </tr> -->
+  
+  <tr *ngFor = "let item of orderData">
+    <td>{{item.person}}</td>
+    <td>{{item.product}}</td>
+    <td>{{item.quantity}}</td>
+    <td>{{item.price}}</td>
+  </tr>
+</table>
+
+<button (click)="exportexcel()">Export to Excel</button>
+</div>

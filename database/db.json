@@ -1,0 +1,18 @@
+{
+  "fields": [
+    {
+      "quantity": 2,
+      "price": 15,
+      "person": "Tom",
+      "product": "Table",
+      "id": 1
+    },
+    {
+      "quantity": 4,
+      "price": 10,
+      "person": "Peter",
+      "product": "Lamp",
+      "id": 2
+    }
+  ]
+}

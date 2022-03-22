@@ -1,0 +1,92 @@
+{
+  "name": "angular-csvparser",
+  "version": "0.0.1",
+  "description": "CSV Import Library for Angular Framework. Go through the README.md file for detailed features and documentation.",
+  "author": {
+    "name": "Tofiq Quadri",
+    "url": "https://linkedin.com/in/tofiqquadri",
+    "email": "tofiqquadri@developershive.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tofiqquadri/ngx-csv-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tofiqquadri/ngx-csv-parser/issues"
+  },
+  "homepage": "https://github.com/tofiqquadri/ngx-csv-parser",
+  "keywords": [
+    "angular csv import",
+    "csv import",
+    "ngx csv import",
+    "angular",
+    "csv",
+    "import csv file in angular",
+    "csv",
+    "parser",
+    "parse",
+    "parsing",
+    "delimited",
+    "text",
+    "data",
+    "auto-detect",
+    "comma",
+    "tab",
+    "pipe",
+    "file",
+    "filereader",
+    "stream",
+    "worker",
+    "workers",
+    "thread",
+    "threading",
+    "multi-threaded",
+    "jquery-plugin"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.3.0",
+    "@angular/common": "~13.3.0",
+    "@angular/compiler": "~13.3.0",
+    "@angular/core": "~13.3.0",
+    "@angular/forms": "~13.3.0",
+    "@angular/platform-browser": "~13.3.0",
+    "@angular/platform-browser-dynamic": "~13.3.0",
+    "@angular/router": "~13.3.0",
+    "rxjs": "~6.5.5",
+    "xlsx": "^0.18.4",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.3.0",
+    "@angular/cli": "~13.3.0",
+    "@angular/compiler-cli": "~13.3.0",
+    "@angular/language-service": "~13.3.0",
+    "@types/jasmine": "~3.6.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.3.17",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^13.3.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~7.0.0",
+    "tslib": "^2.3.1",
+    "tslint": "~6.1.0",
+    "typescript": "~4.6.2"
+  }
+}

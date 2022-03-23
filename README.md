@@ -14,6 +14,6 @@ npx json-server --watch db.json
 ```
 ### This will initialize the db.json file with the json data
 
-### When the table is populated with data and is ready to be exported just click Export to CSV button at the bottom and the file will be downloaded.
+### When the table is populated with data and is ready to be exported just click 'Export to CSV' button at the bottom and the file will be downloaded in CSV format.
 
 `Video: https://youtu.be/shxjkD1For8`
